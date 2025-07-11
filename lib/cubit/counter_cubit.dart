@@ -3,6 +3,11 @@ class CounterCubit extends Cubit<int>{
   //pass initial state, you can pass any data type you want
   CounterCubit() : super(0);
 
-  void increment() {}
+  void increment() {
+    print('Before $state');
+    //emit new state
+    emit(state + 1);
+    print('After $state');
+  }
   
 }
