@@ -32,6 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final counter = CounterCubit().state;
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
