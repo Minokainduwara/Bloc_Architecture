@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowMaterialGrid: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -56,13 +57,27 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          counterCubit.increment();
-          setState(() {}); // Update the UI after incrementing
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              counterCubit.increment();
+              setState(() {}); // Update the UI after incrementing
+            },
+            tooltip: 'Increment',
+            child: const Icon(Icons.add),
+          ),
+
+          FloatingActionButton(
+            onPressed: () {
+              counterCubit.decrement();
+              setState(() {}); // Update the UI after incrementing
+            },
+            tooltip: 'Decrement',
+            child: const Icon(Icons.minimize),
+          ),
+        ],
       ),
     );
   }
