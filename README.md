@@ -1,16 +1,30 @@
-# bloc_architec
+# 🧮 Counter App
 
-A new Flutter project.
+A simple Counter App created for learning purposes. This app demonstrates the basic concept of state management, user interaction, and UI updating using Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ➕ Increment Counter
+- ➖ Decrement Counter
+- 🔄 Reset Counter
+- 🖼️ Simple and user-friendly interface
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 🛠️ Built With
+
+- Language: Dart
+- Framework: Flutter 
+- IDE: VSCode
+
+---
+
+## 🚀 Getting Started
+
+### 🔃 Clone the repository
+
+```bash
+git clone https://github.com/your-username/counter-app.git
